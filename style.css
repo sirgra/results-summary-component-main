@@ -19,24 +19,25 @@ place-items: center;
     margin: 0;
     display: flex;
     flex-direction: row;
-    max-width: 100%;
+    width: 60%;
+    max-width: 1440px;
 }
 
 .result-container {
-    background: rgb(2,0,36);
-    background: linear-gradient(0deg, rgba(46,43,224,1) 0%, rgba(120,87,255,1) 100%);
+    background: linear-gradient(0deg, hsl(241, 81%, 54%) 0%, hsl(252, 100%, 67%) 100%);
     border-radius: 25px;
     margin: 0;
-    max-width: 50%;
+    width: 50%;
+    max-width: 770px;
     color: white;
     display: flex;
     flex-direction: column;
     place-items: center;
+    justify-content: space-evenly;
 }
 
 .score {
-    background: rgb(36,33,192);
-    background: linear-gradient(0deg, rgba(36,33,192,1) 0%, rgba(78,33,192,1) 100%);
+    background: linear-gradient(0deg,  hsla(241, 72%, 46%, 0) 0%, hsla(256, 72%, 46%, 1)  100%);
     border-radius: 50%;
     height: 4em;
     width: 4em;
@@ -45,7 +46,7 @@ place-items: center;
 
 .result-text {
     color: hsl(241, 100%, 89%);
-    padding: 1em 0;
+    padding: .5em 0;
     font-size: 2rem;
 }
 
@@ -55,13 +56,17 @@ place-items: center;
     font-size: 5rem;
     line-height: 1em;
     margin: 0;
+    position: absolute;
+    transform: translate(-50%, -70%) 
 }
 
 .score p {
-    text-align: center;
     color: hsl(241, 100%, 89%);
     margin: 0;
     line-height: 1em;
+    padding: 2em;
+    position: absolute;
+    transform: translate(-50%)
 }
 
 .great-text h3 {
@@ -76,4 +81,155 @@ place-items: center;
     text-align: center;
     margin: 0;
     padding: 0 4em 4em 4em;
+}
+
+.summary {
+    width: 50%;
+    margin: 0;
+    padding: 2.5em 0;
+}
+
+.summary h3 {
+    font-size: 2rem;
+    margin: 0;
+    padding-left: 1em;
+}
+
+.score-container {
+    padding: 0 3em;
+    margin: 0;
+}
+
+.reaction {
+    background: hsla(0, 100%, 67%, 0.2);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 15px;
+    margin: 1em 0;
+}
+
+.reaction h4{
+    color: hsl(0, 100%, 67%);
+    margin: 18px;
+}
+
+.reaction p {
+    margin: 18px;
+}
+
+.reaction h4::before {
+    content:"";
+    display: block;
+    background: url(/assets/images/icon-reaction.svg) no-repeat;
+    width: 25px;
+    height: 25px;
+    float: left;
+    margin: 0;
+}
+
+.memory {
+    background: hsl(39, 100%, 56%, 0.2);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 15px;
+    margin: 1em 0;
+}
+
+.memory h4{
+    color: hsl(39, 100%, 56%);
+    margin: 18px;
+}
+
+.memory p {
+    margin: 18px;
+}
+
+.memory h4::before {
+    content:"";
+    display: block;
+    background: url(/assets/images/icon-memory.svg) no-repeat;
+    width: 25px;
+    height: 25px;
+    float: left;
+    margin: 0;
+}
+
+.verbal {
+    background: hsl(166, 100%, 37%, 0.2);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 15px;
+    margin: 1em 0;
+}
+
+.verbal h4{
+    color: hsl(166, 100%, 37%);
+    margin: 18px;
+}
+
+.verbal p {
+    margin: 18px;
+}
+
+.verbal h4::before {
+    content:"";
+    display: block;
+    background: url(/assets/images/icon-verbal.svg) no-repeat;
+    width: 25px;
+    height: 25px;
+    float: left;
+    margin: 0;
+}
+
+.visual {
+    background: hsl(234, 85%, 45%, 0.2);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 15px;
+    margin: 1em 0 3em 0;
+}
+
+.visual h4{
+    color: hsl(234, 85%, 45%);
+    margin: 18px;
+}
+
+.visual p {
+    margin: 18px;
+}
+
+.visual h4::before {
+    content:"";
+    display: block;
+    background: url(/assets/images/icon-visual.svg) no-repeat;
+    width: 25px;
+    height: 25px;
+    float: left;
+    margin: 0;
+}
+
+
+.hundred {
+    color: hsla(0, 0%, 0%, 0.4);
+}
+
+.btn {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    background: hsl(224, 30%, 27%);
+    padding: 1em 0;
+    margin: 2em 3em;
+    border-radius: 31.5px;
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+}
+
+.btn:hover,
+.btn:focus {
+    background: linear-gradient(0deg, hsl(241, 81%, 54%) 0%, hsl(252, 100%, 67%) 100%);
 }
