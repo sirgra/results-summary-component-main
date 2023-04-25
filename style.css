@@ -19,8 +19,8 @@ place-items: center;
     margin: 0;
     display: flex;
     flex-direction: row;
-    width: 60%;
-    max-width: 1440px;
+    width: 100%;
+    max-width: 800px;
 }
 
 .result-container {
@@ -28,12 +28,18 @@ place-items: center;
     border-radius: 25px;
     margin: 0;
     width: 50%;
-    max-width: 770px;
+    max-width: 400px;
     color: white;
     display: flex;
     flex-direction: column;
     place-items: center;
     justify-content: space-evenly;
+}
+
+.result-text {
+    color: hsl(241, 100%, 89%);
+    padding: .5em 0;
+    font-size: 2rem;
 }
 
 .score {
@@ -42,12 +48,6 @@ place-items: center;
     height: 4em;
     width: 4em;
     padding: 25%;
-}
-
-.result-text {
-    color: hsl(241, 100%, 89%);
-    padding: .5em 0;
-    font-size: 2rem;
 }
 
 .score h1 {
@@ -85,7 +85,7 @@ place-items: center;
 
 .summary {
     width: 50%;
-    max-width: 770px;
+    max-width: 450px;
     margin: 0;
     padding: 2.5em 0;
 }
@@ -108,7 +108,7 @@ place-items: center;
     border-radius: 15px;
     margin: 1em 0;
     width: 100%;
-    max-width: 500px;
+    max-width: 350px;
 }
 
 .row h4,
@@ -163,7 +163,6 @@ p {
 
 .visual {
     background: hsl(234, 85%, 45%, 0.2);
-    margin: 1em 0 3em 0;
 }
 
 .visual h4{
@@ -185,13 +184,178 @@ p {
     place-items: center;
     background: hsl(224, 30%, 27%);
     padding: 1em 0;
-    margin: 2em 3em;
+    margin: 4em 3em 2em 3em;
     border-radius: 31.5px;
     color: hsl(0, 0%, 100%);
     text-decoration: none;
+    max-width: 350px;
 }
 
 .btn:hover,
 .btn:focus {
     background: linear-gradient(0deg, hsl(241, 81%, 54%) 0%, hsl(252, 100%, 67%) 100%);
+}
+
+@media (max-width: 690px) {
+     
+    body {
+        font-size: 16px;
+    }
+
+    .main {
+        flex-direction: column;
+        border-radius: 0;
+    }
+
+    .result-container {
+        border-radius: 0 0 25px 25px;
+        width: 100%;
+        max-width: 800px;
+        color: white;
+    }
+
+    .result-text {
+        padding: .5em 0;
+        font-size: 1.25rem;
+    }
+    
+    .score {
+        width: 2em;
+        height: 2em;
+        border-radius: 50%;
+        padding: 20%;
+    }
+
+    .score h1 {
+        text-align: center;
+        font-weight: 800;
+        font-size: 4rem;
+        line-height: 1em;
+    }
+    
+    .great-text h3 {
+        text-align: center;
+        font-size: 1.5rem;
+        line-height: .2em;
+        margin: 0;
+        padding-top: 1.65em;
+    }
+    
+    .great-text p {
+        color: hsl(241, 100%, 89%);
+        text-align: center;
+        margin: 0;
+        padding: 0 3em 1.5em 3em;
+    }
+
+    .score-container {
+        padding: 0 1.75em;
+        margin: 0;
+    }
+
+    .summary {
+        width: 100%;
+        max-width: 800px;
+        padding: 1em 0;
+    }
+
+    .summary h3 {
+        font-size: 1.25rem;
+        margin: 0;
+        padding-left: 1.25em;
+    }
+
+    .row {
+        width: 100%;
+        max-width: 800px;
+    }
+
+    .btn {
+        padding: 1em 0;
+        margin: 2.5em 1.75em .5em 1.75em;
+        max-width: 800px;
+    }
+
+}
+
+@media (max-width: 400px) {
+     
+    body {
+        font-size: 16px;
+    }
+
+    .main {
+        flex-direction: column;
+        border-radius: 0;
+    }
+
+    .result-container {
+        border-radius: 0 0 25px 25px;
+        width: 100%;
+        max-width: 800px;
+        color: white;
+    }
+
+    .result-text {
+        padding: .5em 0;
+        font-size: 1.25rem;
+    }
+    
+    .score {
+        width: 2em;
+        height: 2em;
+        border-radius: 50%;
+        padding: 20%;
+    }
+
+    .score h1 {
+        text-align: center;
+        font-weight: 800;
+        font-size: 4rem;
+        line-height: 1em;
+    }
+    
+    .great-text h3 {
+        text-align: center;
+        font-size: 1.5rem;
+        line-height: .2em;
+        margin: 0;
+        padding-top: 1.65em;
+    }
+    
+    .great-text p {
+        color: hsl(241, 100%, 89%);
+        text-align: center;
+        margin: 0;
+        padding: 0 3em 1.5em 3em;
+    }
+
+    .score-container {
+        padding: 0 1.75em;
+        margin: 0;
+    }
+
+    .summary {
+        width: 100%;
+        max-width: 800px;
+        padding: 1em 0;
+    }
+
+    .summary h3 {
+        font-size: 1.25rem;
+        margin: 0;
+        padding-left: 1.25em;
+    }
+
+    .row {
+        width: 100%;
+        max-width: 800px;
+    }
+
+    .btn {
+        padding: 1em 0;
+        margin: 2.5em 1.75em .5em 1.75em;
+        max-width: 800px;
+    }
+
 }
