@@ -134,7 +134,7 @@ p {
 }
 
 .reaction h4::before {
-    background: url(/assets/images/icon-reaction.svg) no-repeat;
+    background: url(https://github.com/sirgra/results-summary-component-main/blob/58fd7673cad5c129db081e1348c26818c27e171c/assets/images/icon-reaction.svg) no-repeat;
 }
 
 .memory {
@@ -146,7 +146,7 @@ p {
 }
 
 .memory h4::before {
-    background: url(/assets/images/icon-memory.svg) no-repeat;
+    background: url(https://github.com/sirgra/results-summary-component-main/blob/58fd7673cad5c129db081e1348c26818c27e171c/assets/images/icon-memory.svg) no-repeat;
 }
 
 .verbal {
@@ -158,7 +158,7 @@ p {
 }
 
 .verbal h4::before {
-    background: url(/assets/images/icon-verbal.svg) no-repeat;
+    background: url(https://github.com/sirgra/results-summary-component-main/blob/58fd7673cad5c129db081e1348c26818c27e171c/assets/images/icon-verbal.svg) no-repeat;
 }
 
 .visual {
@@ -170,7 +170,7 @@ p {
 }
 
 .visual h4::before {
-    background: url(/assets/images/icon-visual.svg) no-repeat;
+    background: url(https://github.com/sirgra/results-summary-component-main/blob/58fd7673cad5c129db081e1348c26818c27e171c/assets/images/icon-visual.svg) no-repeat;
 }
 
 
